@@ -88,7 +88,7 @@ class Cache:
 
     def get(self, key: str, fn: Optional[Callable] =
             None) -> Union[str, bytes, int, float]:
-        """get method that take a key string argument and an optional Callable"""
+        """method that take a key string argument and an optional Callable"""
         val = self._redis.get(name=key)
         if val is None:
             return val
