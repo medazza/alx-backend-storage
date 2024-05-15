@@ -28,7 +28,6 @@ def replay(method: Callable) -> None:
     else:
         num_calls = '0'
 
-
     print(f"{qualname} was called {num_calls} times:")
 
     for inp, out in zip(inputs, outputs):
